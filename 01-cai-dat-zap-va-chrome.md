@@ -15,7 +15,7 @@ Làm lần lượt các bước dưới đây trước khi làm [Lab 1](02-huong
 
 ## Bước 2. Chạy EShop
 
-Tải mã nguồn [EShop](https://github.com/KTPM2026/eshop-sut) (**Code → Download ZIP**, giải nén và đổi tên thư mục thành `eshop-sut`) nếu chưa có. Trong VS Code, mở **thư mục cha chứa `eshop-sut`**. Chọn **Terminal → New Terminal**, chạy:
+Mã nguồn đã có trong thư mục `eshop-sut` đi kèm hướng dẫn. Trong VS Code, mở **thư mục có file `README.md` và thư mục `eshop-sut`**. Chọn **Terminal → New Terminal**, chạy:
 
 ```powershell
 cd .\eshop-sut\backend

