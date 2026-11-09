@@ -67,12 +67,8 @@ Chọn một dòng trong bảng Fuzzer:
 
 EShop đưa từ khóa tìm kiếm vào HTML bằng `dangerouslySetInnerHTML`, nên đoạn `onerror=...` có thể chạy JavaScript. Đây là XSS phía trình duyệt.
 
-Cách sửa phần hiển thị từ khóa: dùng `<span>{search}</span>` để React hiển thị dữ liệu dưới dạng văn bản.
-
 Nộp:
 
 - Ảnh request tìm kiếm trong **History**.
 - Ảnh kết quả **Fuzzer**.
 - Ảnh hộp thoại **localhost**, kèm payload đã dùng.
-
-Nếu không thấy hộp thoại, ghi rõ **chưa xác thực được XSS** cùng hiện tượng gặp phải; không kết luận thành công chỉ vì Fuzzer trả `200` hoặc `500`.
