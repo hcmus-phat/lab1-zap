@@ -1,15 +1,18 @@
 ﻿# Lab 1 — Kiểm tra XSS bằng ZAP và Chrome
 
-**Chuẩn bị:** hoàn tất [cài ZAP và cấu hình Chrome](01-cai-dat-zap-va-chrome.md), giữ EShop và ZAP đang chạy. Chỉ làm trên EShop localhost của môn học.
+**Chuẩn bị:** hoàn tất [cài ZAP và cấu hình Chrome](01-cai-dat-zap-va-chrome.md), giữ EShop đang chạy. Chỉ làm trên EShop localhost của môn học.
 
 **Bạn sẽ làm:** bắt request tìm kiếm → cho ZAP thử các payload → kiểm tra XSS trên Chrome. Payload là chuỗi dữ liệu dùng để thử lỗi.
 
-## Bước 1. Bắt request tìm kiếm
+## Bước 1. Mở ZAP, bật Chrome và bắt request tìm kiếm
 
-1. Trong Chrome mở qua ZAP, vào `http://localhost:5173`.
-2. Nhập `test` vào ô **Tìm kiếm...** → bấm **Tìm**.
-3. Quay lại ZAP → tab **History** phía dưới.
-4. Chọn dòng `GET http://localhost:3000/api/products?search=test`.
+1. Mở **ZAP**. Nếu được hỏi lưu phiên, chọn **No, I do not want to persist this session** → **Start**.
+2. Chọn tab **Quick Start** → bấm **Manual Explore**.
+3. Trong ô **URL to explore**, nhập `http://localhost:5173`.
+4. Ở danh sách trình duyệt đang hiện **Firefox**, đổi sang **Chrome**. Bỏ chọn **Enable HUD** nếu có.
+5. Bấm **Launch Browser**. Nếu Chrome không mở, xem **Bước 5** trong [hướng dẫn cài đặt](01-cai-dat-zap-va-chrome.md).
+6. Trong cửa sổ Chrome vừa mở, nhập `test` vào ô **Tìm kiếm...** của EShop → bấm **Tìm**.
+7. Quay lại ZAP → tab **History** phía dưới → chọn dòng `GET http://localhost:3000/api/products?search=test`.
 
 **Kết quả cần thấy:** tab **Request** có `search=test`. Chụp ảnh dòng request này.
 
