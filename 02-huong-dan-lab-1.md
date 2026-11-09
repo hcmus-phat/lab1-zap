@@ -74,6 +74,5 @@ Nộp:
 - Ảnh request tìm kiếm trong **History**.
 - Ảnh kết quả **Fuzzer**.
 - Ảnh hộp thoại **localhost**, kèm payload đã dùng.
-- Vài dòng giải thích nguyên nhân, cách sửa và kết quả khi thử `ZAPX13_benign_marker`.
 
 Nếu không thấy hộp thoại, ghi rõ **chưa xác thực được XSS** cùng hiện tượng gặp phải; không kết luận thành công chỉ vì Fuzzer trả `200` hoặc `500`.
